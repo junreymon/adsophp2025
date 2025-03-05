@@ -1,0 +1,8 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^index/? index.php [NC,L]
+RewriteRule ^controllers/controlador/? controllers/controlador.php [NC,L]
